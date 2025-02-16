@@ -5,3 +5,9 @@ Sandy beige   #bcaa96
 Dark gray     #222222
 Light gray    #d3d4d6
 Off-white     #f6f6f6
+
+Turkish Rose #ae7088
+Cold Turkey  #c9b5ba
+Eggplant     #724553
+Careys Pink  #d4a4bc
+Hot Pink     #ef7c8e

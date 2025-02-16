@@ -1,0 +1,114 @@
+/*
+COLOR PALETTE
+Turkish Rose #ae7088
+Cream        #fae8e0
+Eggplant     #724553
+Careys Pink  #d4a4bc
+Hot Pink     #ef7c8e
+*/
+
+/* GLOBAL STYLES
+--------------------------------------------*/
+/* 
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+html, body {
+    height: 100%;
+}
+body {
+    background: #fae8e0;
+    margin: 0;
+}
+
+/* LINKS
+--------------------------------------------*/
+
+a {
+    color: #ef7c8e;
+}
+
+a:hover{
+    color: #ae7088;
+    text-decoration: none;
+
+}
+
+footer a{
+    color: #fae8e0;
+}
+
+footer a:hover{
+    color:#ef7c8e;
+}
+
+.btn {
+    background: #ef7c8e;
+    color: #fae8e0;
+    text-decoration: none;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
+/* HOME
+--------------------------------------------*/
+
+.home {
+    background: url(../images/red-shoes-2500px.jpg) no-repeat;
+    background-size: cover;
+}
+.home .content-wrapper {
+    background: rgb(255 255 255 / 0.9)
+}
+
+/*RESUME
+--------------------------------------------*/
+
+.resume header::before{
+    background: url(../images/red-shoes-2500px.jpg);
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 375px;
+}
+
+/*PROFILE
+--------------------------------------------*/
+
+/*Projects
+--------------------------------------------*/
+
+/*Work Experience
+--------------------------------------------*/
+
+/*Education
+--------------------------------------------*/
+
+
+/*FOOTER
+--------------------------------------------*/
+footer {
+    background: #222;
+    color: #fae8e0;
+}
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+
+.socials li {
+    display: inline-block;
+}
+
+.socials img {
+    width: 32px;
+}
