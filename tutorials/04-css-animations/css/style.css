@@ -53,10 +53,10 @@ html {
   .button {
     animation: 5s infinite alternate-reverse steps(10, jump-end);
     animation-name: stretching;
-    align-content: center;
-    align-self: center;
-    transform: rotate3d(1, 2, 3, 10deg);
-    transform: skew(30deg, 20deg);
+    /* align-content: center;
+    align-self: center; */
+    transform: rotate3d(1, 2, 3, 20deg);
+    transform: skew(40deg, 20deg);
     display:inline-block;
     background-color: blueviolet;
     background: linear-gradient(204deg, rgba(143,0,0,1) 0%, rgba(121,9,117,1) 50%, rgba(0,212,255,1) 100%);
