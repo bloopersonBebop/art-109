@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body class="resume">
+
+    <a class="btn download-link" href="images/resumes.pdf">Download Resume PDF</a>
     <!-- //  INTRO  // -->
     <header>
       <!-- Start content edits below this line. -->
@@ -19,7 +21,7 @@
 
     <main class="content-wrapper">
       <!-- //  PROFILE  // -->
-      <section>
+      <section class="resume-section">
         <!-- Start content edits below this line. -->
         <h2>Personal Statement</h2>
         <p>A passionate graphic design student pursuing a Bachelor's in Design Studies, eager to apply creative skills an gain hands-on experience in a dynamic work environment. Focused on learning new techniques, staying current with design trends, and contributing to meaningful projects that solve problems through effective visual communication.</p>
@@ -29,16 +31,19 @@
       </section>
 
       <!-- //  PROJECTS  // -->
-      <section>
+      <section class="resume-section">
         <!-- Start content edits below this line. -->
         <h2>Projects</h2>
         <p>Please see link below for entire site of projects.</p>
 
         <!-- To add more items, copy this whole <section></section> block-->
-        <section>
-          <img src="images/bunny-logo-500px.png" srcset="images/bunny-logo-1000px.png" alt="Lex Martinez Bunny Logo" width="500" height="500">
-          <pre><img src="image/website-1-500px.png" srcset="images/website-1-1000px.png" alt="Lex Martinez Website 1" width="" height="">
-<img src="image/website-2-500px.png" srcset="images/website-2-1000px.png" alt="Lex Martinez Website 2" width="" height=""></pre>
+        <section class="project-item">
+          <div class="container">            
+            <img src="images/bunny-logo-500px.png" srcset="images/bunny-logo-1000px.png" alt="Lex Martinez Bunny Logo" width="500" height="500">
+            <img src="image/website-1-500px.png" srcset="images/website-1-1000px.png" alt="Lex Martinez Website 1" width="" height="">
+            <img src="image/website-2-500px.png" srcset="images/website-2-1000px.png" alt="Lex Martinez Website 2" width="" height=""></pre>
+          </div>
+          
           <h3>Lex Martinez Website</h3>
           <p>Tasked with creating website full of works throughout my time at SJSU. This was done using Adobe Portfolio.</p>
           <!-- link to project -->
@@ -50,15 +55,36 @@
         <!-- End content edits here. -->
       </section>
 
+        <!-- To add more items, copy this whole <section></section> block-->
+        <section class="project-item">
+          <img src="images/psilocybin-poster500px.png" srcset="images/psilocybin-poster1000px.png" alt="Psilocybin" width="500" height="666">
+          <h3>Psilocybin</h3>
+          <p>I designed a vibrant and immersive poster focused on psilocybin mushrooms. Using neon-like colors, I aimed to evoke a sense of surrealism, simulating the feeling of hallucination. The design went through 10+ iterations, balancing informative content with artistic expression to create a visually engaging experience.
+            Adobe Illustrator 2023
+            15in x 20in</p>
+          <!-- link to project -->
+          <!-- additional links, e.g. newsletter -->
+          <!-- <a href="#" target="_blank">Another link</a> -->
+        </section>
+        
+        <!-- End content edits here. -->
+      </section>
+
       <!-- //  WORK EXPERIENCE  // -->
-      <section>
+      <section class="resume-section">
         <!-- Start content edits below this line.  -->
+        
         <h2>Work Experience</h2>
 
-        <section>
-          <h3>Current Position: Retail Relationship Banker</h3>
+        <section class="work-item">
+
+        <div class="work-details">
+          <h3>Retail Relationship Banker</h3>
           <p>BMO US</p>
           <p>2021-Present</p>
+        </div>
+
+        <div class="work-summary">
           <p>Delivers exceptional service to BMO customers and prospects. Identifies customer needs and provides advice and guidance regarding financial solutions that are in the best interests of customers. Works collaboratively within the branch and with BMO partners to deliver the desired customer experience and achieve overall business objectives.</p>
           <!-- <p>Optional list:</p> -->
           <ul>
@@ -67,9 +93,17 @@
             <li>Maintains current knowledge of personal banking products, practices, and trends and integrates into customer conversations.</li>
             <li>An aptitude for listening, solving problems, and responding flexibly and creatively to new challenges.</li>
           </ul>
+
+        </div>
+
         </section>
 
-        <h2>Previous Experience</h2>
+        <section class="work-item">
+        
+          <div class="work-details">
+        <h3>Previous Experience</h3>
+          </div>
+         <div class="work-summary">
         <ul>
           <!-- <li>Retail Relationship Banker</li> -->
           <li>Cake Decorator</li>
@@ -77,13 +111,15 @@
           <li>Icecream Cake Decorator</li>
         </ul>
         <!-- To add more items, copy this whole <section></section> block -->
+         </div>
+       </section>
 
 
         <!-- End content edits here. -->
       </section>
 
       <!-- //  EDUCATION & CERTIFICATIONS  // -->
-      <section>
+      <section class="resume-section">
         <!-- Start content edits below this line.  -->
         <h2>Education</h2>
 

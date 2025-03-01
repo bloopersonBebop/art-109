@@ -65,13 +65,33 @@ footer a:hover{
 .home {
     background: url(../images/red-shoes-2500px.jpg) no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 .home .content-wrapper {
-    background: rgb(255 255 255 / 0.9)
+
+    flex: 1 0 auto;
+}
+
+.content-bg {
+
+    background: rgb(255 255 255 / 0.9);
+    padding: 30px;
 }
 
 /*RESUME
 --------------------------------------------*/
+
+.resume-section {
+
+    margin-bottom: 50px;
+
+}
+
+.resume-section h2{
+
+    border-bottom: 2px dashed #ae7088;   
+}
 
 .resume header::before{
     background: url(../images/red-shoes-2500px.jpg);
@@ -81,14 +101,57 @@ footer a:hover{
     height: 375px;
 }
 
+.download-link {
+
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+
 /*PROFILE
 --------------------------------------------*/
 
+
+.project-item {
+
+    display: flow-root;
+    margin: 30px 0;
+}
+
+.project-item img {
+
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+
+}
 /*Projects
 --------------------------------------------*/
 
 /*Work Experience
 --------------------------------------------*/
+
+.work-item {
+
+display: grid;
+grid-template-columns: 300px 1fr;
+column-gap: 20px;
+}
+
+.work-details {
+
+
+}
+
+.work-summary{
+
+
+}
+
+
 
 /*Education
 --------------------------------------------*/
@@ -99,6 +162,9 @@ footer a:hover{
 footer {
     background: #222;
     color: #fae8e0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 32px;
 }
 .socials {
     list-style-type: none;
@@ -107,8 +173,14 @@ footer {
 
 .socials li {
     display: inline-block;
+    margin-left: 10px;
 }
 
 .socials img {
     width: 32px;
+}
+
+.socials img:hover {
+
+    opacity: 0.5;
 }
