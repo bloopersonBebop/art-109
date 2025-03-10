@@ -61,11 +61,12 @@ header {
 
 .out {
     padding-top: 300px;
+    padding: 50px;
     text-align:right;
     color: rgb(199, 12, 12);
     font-size: 30px;
     width: 800px;
-    margin: 0 1000px;
+    margin: 1000px;
 }
 
 .left {
