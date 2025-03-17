@@ -1,0 +1,397 @@
+/*
+COLOR PALETTE
+Turkish Rose #ae7088
+Cream        #fae8e0
+Eggplant     #724553
+Careys Pink  #d4a4bc
+Hot Pink     #ef7c8e
+*/
+
+/* GLOBAL STYLES
+--------------------------------------------*/
+/* 
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+    box-sizing: border-box;
+    font-size:62.5%; /* setting the default to 10px*/
+    font-weight: 400;
+    margin: 0;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+html, body {
+    height: 100%;
+}
+body {
+    background: #fae8e0;
+    margin: 0;
+    font-family: stevie-sans, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+/* Basic styles for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ef7c8e;
+    /* Green background */
+    color: #fff;
+}
+
+/* Logo styling */
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Navigation links styling */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, text-decoration 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #e0e0e0;
+    /* Lighter color for active/hover */
+    background-color: #ae7088;
+    /* Darker green background on hover */
+    border-radius: 4px;
+    /* Optional: rounded corners */
+}
+
+/* Menu toggle button for mobile view */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 5px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #ef7c8e;
+        /* Green background for mobile view */
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+header {
+    margin: 0;
+    padding: 0;
+
+}
+
+h1, h2, h3 {
+
+    font-family: "canvas-script", sans-serif;
+    padding: 0;
+
+}
+
+h1 {
+    font-size: 7rem;
+    color: #ef7c8e;
+    line-height: .9;
+    margin-bottom:1px; 
+}
+
+h2 {
+    font-size: 3.6rem;
+    color: #ef7c8e;
+    margin-top: 1px;
+}
+
+h3 {
+    font-size: 2.4rem;
+    color: #ae7088;
+    line-height: .9;
+}
+/* LINKS
+--------------------------------------------*/
+
+a {
+    color: #ef7c8e;
+}
+
+a:hover{
+    color: #ae7088;
+    text-decoration: none;
+
+}
+
+footer a{
+    color: #fae8e0;
+}
+
+footer a:hover{
+    color:#ef7c8e;
+}
+
+.btn {
+    background: #ef7c8e;
+    color: #fae8e0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 7px;
+    letter-spacing: .1em;
+    line-height: 1;
+    border-radius: 4px;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
+/* HOME
+--------------------------------------------*/
+
+.home {
+    background: url(../images/red-shoes-2500px.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+}
+.home .content-wrapper {
+
+    flex: 1 0 auto;
+}
+
+.content-bg {
+
+    background: rgb(255 255 255 / 0.9);
+    padding: 30px;
+}
+
+@media screen and (max-width:650px) {
+    .home .content-wrapper {
+        padding: 10px;
+    }
+    .content-bg {
+        padding: 20px;
+    }
+}
+
+/*RESUME
+--------------------------------------------*/
+
+.resume-section {
+
+    margin-bottom: 50px;
+
+}
+
+.resume-section h2{
+
+    border-bottom: 2px dashed #ae7088;   
+}
+
+.resume header::before{
+    background: url(../images/red-shoes-2500px.jpg);
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 375px;
+}
+
+.download-link {
+
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1310px) {
+    .download-link {
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .resume header::before {
+        height: 200px;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+    }
+}
+
+/*Projects
+--------------------------------------------*/
+
+.project-item {
+    margin: 30px 0;
+
+}
+
+.project-item img {
+
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+
+}
+
+@media screen and (min-width:892px) {
+    .project-item {
+        display: flow-root;
+    }
+    .project-item img {
+
+        width: auto;
+        height: auto;
+        float: left;
+        margin-right: 20px;
+    }    
+}
+    @media screen and (min-width:650px) and (max-width:859px) {
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+    .project-item img {
+        width: 100%;
+    }
+}
+    @media screen and (max-width:500px ) {
+        .project-item img {
+            width: 100%;
+            margin: 10px;
+        }
+    }
+
+/*Work Experience
+--------------------------------------------*/
+
+.work-item {
+margin:30px 0;
+}
+ 
+.work-details p {
+    margin: 0;
+
+
+}
+
+
+
+@media screen and (min-width:860px) {
+    .work-item {
+
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        column-gap: 20px;
+
+        }
+        .work-summary p:first-child {
+            margin: 0;
+        
+        }
+}
+
+
+
+/*Education
+--------------------------------------------*/
+.education-item {
+
+    margin:40px 0;
+}
+
+.education-item p {
+    margin: 0;
+}
+
+/*FOOTER
+--------------------------------------------*/
+footer {
+    background: #222;
+    color: #fae8e0;
+
+}
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+
+.socials li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.socials img {
+    width: 32px;
+}
+
+.socials img:hover {
+
+    opacity: 0.5;
+}
+
+@media screen and (min-width:525px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 32px;
+    }
+}
+@media screen and (max-width:524px) {
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+}
