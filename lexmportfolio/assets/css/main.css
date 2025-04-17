@@ -29,6 +29,43 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+.btn {
+		background: #ef7c8e;
+		color: #fae8e0;
+		text-decoration: none;
+		/* text-transform: uppercase; */
+		font-size: 1.2rem;
+		display: inline-block;
+		padding: 7px;
+		letter-spacing: .1em;
+		line-height: 1;
+		border-radius: 4px;
+}
+
+.btn:hover {
+	background-color:#ffffff;
+	transition: 0.5s;
+}
+
+.column {
+	float: left;
+	width: 33%;
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+	/* padding: 16px; */
+	/* margin-left: 60px; */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
 body {
 	line-height: 1;
 }
@@ -145,13 +182,13 @@ input, select, textarea {
 		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
-		color: #585858;
-		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
+		color: #ffffff;
+		border-bottom: dotted 1px rgb(255, 255, 255);
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #f2849e !important;
+			color: #ef7c8e !important;
 		}
 
 	strong, b {
@@ -2357,14 +2394,26 @@ input, select, textarea {
 			margin: 0 0 3em 0;
 			width: 100%;
 		}
+		.image.medium {
+			display: block;
+			margin: 0 0 3em 0;
+			width: 90%;
+		}
 
 			.image.main img {
 				width: 100%;
+			}
+			.image.medium img {
+				width: 80%;
 			}
 
 			@media screen and (max-width: 736px) {
 
 				.image.main {
+					margin: 0 0 2em 0;
+				}
+
+				.image.medium {
 					margin: 0 0 2em 0;
 				}
 
@@ -2455,8 +2504,8 @@ input, select, textarea {
 		background-color: transparent;
 		border-radius: 4px;
 		border: 0;
-		box-shadow: inset 0 0 0 2px #585858;
-		color: #585858 !important;
+		box-shadow: inset 0 0 0 2px #ffffff;
+		color: #ffffff !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8em;
@@ -2503,7 +2552,7 @@ input, select, textarea {
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: rgba(242, 132, 158, 0.1);
+			background-color: rgb(255, 255, 255);
 		}
 
 		input[type="submit"].small,
@@ -2528,7 +2577,7 @@ input, select, textarea {
 		button.primary,
 		.button.primary {
 			box-shadow: none;
-			background-color: #585858;
+			background-color: #f2849e;
 			color: #ffffff !important;
 		}
 
@@ -2537,7 +2586,8 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #f2849e;
+				background-color: #ffffff;
+				color: #f2849e !important;
 			}
 
 			input[type="submit"].primary:active,
@@ -3204,7 +3254,7 @@ input, select, textarea {
 				margin-top: 5em;
 				list-style: none;
 				font-size: 0.8em;
-				color: rgba(88, 88, 88, 0.5);
+				color: rgba(255, 255, 255, 0.869);
 			}
 
 				#footer > .inner .copyright a {
