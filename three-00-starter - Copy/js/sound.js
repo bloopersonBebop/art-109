@@ -32,3 +32,5 @@ pauseBtn.addEventListener('click', function() {
 })
 
 song.volume =.1;
+song2.volume =.1;
+song3.volume =.1;
