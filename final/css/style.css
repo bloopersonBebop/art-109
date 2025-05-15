@@ -1,0 +1,174 @@
+/* CSS RESETS:
+ Border box reset:
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ 62.5% Fix: https: //www.aleksandrhovhannisyan.com/blog/62-5-percent-font-size-trick/ */
+
+
+html {
+   box-sizing: border-box;
+   font-size: 62.5%;
+}
+
+
+*,
+*:before,
+*:after {
+   box-sizing: inherit;
+   margin: 0;
+   padding: 0;
+}
+
+
+html,
+body {
+   height: 100%;
+}
+
+
+body {
+    font-size: 1.6rem;
+   /* font-size 1.6rem is now the same as 16px */
+   line-height: 1.6;
+   cursor: url('../images/cursor.cur'), auto;
+   font-family: "Alike Angular", serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+header {
+    font-family: "Alike Angular", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 100px;
+    /* background-color: brown; */
+    text-align: center;
+    color: rgb(199, 12, 12);
+    font-size: 100px;
+}
+
+
+.baby {
+    background-image: url('../images/babykiks.gif');
+    background-size: 100%;
+    background-position: center;
+
+}
+
+.sewn {
+    background-image: url(../images/sewn.gif) ;
+    background-size: 200px;
+}
+
+.out {
+    padding-top: 300px;
+    padding: 50px;
+    text-align:right;
+    color: rgb(199, 12, 12);
+    font-size: 30px;
+    width: 800px;
+    margin: 1000px;
+}
+
+.left {
+    padding-top: 100px;
+    padding-left: 100px; 
+    color: rgb(199, 12, 12);
+    font-size: 40px;
+
+}
+
+.right{
+    padding-top: 800px;
+    padding-right: 300px;
+    text-align:right;
+    color: rgb(199, 12, 12); 
+    font-size: 100px;
+}
+
+.sorry{
+    padding-top: 400px;
+    padding-right: 600px;
+    text-align:right;
+    color: rgb(199, 12, 12); 
+    font-size: 100px;
+}
+
+.fade{
+    text-decoration: none;
+    color: transparent;
+    transition: color 3s ease;
+}
+
+.fade:hover{
+    color: rgb(199, 12, 12);
+}
+
+.hidden {
+    visibility: visible;
+}
+
+main {
+    max-width: 1000px;
+    margin: 5% auto;
+    position: relative;
+}
+
+
+.images-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.image-div {
+    flex: 0 1 auto;
+    max-width: 33%;
+    max-height: 33%;
+}
+#alabama{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 50%;
+    height: 50%;
+
+}
+
+.final {
+    background-color: black;
+}
+
+a {
+    color: rgb(199, 12, 12);
+}
+
+a:link {
+    text-decoration: none;
+    cursor: url('../images/cursor.cur'), auto;
+}
+
+a:hover{
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+a:visited {
+    text-decoration: none;
+}
+.button {
+    
+    text-decoration: none;
+    transition: color 1s ease;
+}
+
+.alike-angular-regular {
+    font-family: "Alike Angular", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
